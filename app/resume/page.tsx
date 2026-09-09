@@ -2,8 +2,6 @@ const links = [
     { label: "Personal GitHub", href: "https://github.com/sofia-robles" },
     { label: "University GitHub", href: "https://github.com/robles-sofia" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/sofianrobles/" },
-    { label: "Personal Email", href: "mailto:sofianrobles@gmail.com" },
-    { label: "University Email", href: "mailto:sofia.robles@okstate.edu" },
 ];
 
 export default function Resume() {
