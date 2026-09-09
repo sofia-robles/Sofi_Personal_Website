@@ -33,7 +33,7 @@ export default function Resume() {
                     href="https://www.linkedin.com/in/sofianrobles/"
                     className="underline"
                     target="_blank"
-                    rel="noopener roreferrer"
+                    rel="noopener noreferrer"
                     >
                         LinkedIn
                     </a>
@@ -45,7 +45,7 @@ export default function Resume() {
                     href="mailto:sofianrobles@gmail.com"
                     className="underline"
                     target="_blank"
-                    rel="noopener noreferrrer"
+                    rel="noopener noreferrer"
                     >
                         Personal Email
                     </a>
@@ -57,7 +57,7 @@ export default function Resume() {
                     href="mailto:sofia.robles@okstate.edu"
                     className="underline"
                     target="_blank"
-                    rel="noopener noreferrrer"
+                    rel="noopener noreferrer"
                     >
                         University Email
                     </a>
