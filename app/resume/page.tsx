@@ -1,69 +1,26 @@
+const links = [
+    { label: "Personal GitHub", href: "https://github.com/sofia-robles" },
+    { label: "University GitHub", href: "https://github.com/robles-sofia" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/sofianrobles/" },
+    { label: "Personal Email", href: "mailto:sofianrobles@gmail.com" },
+    { label: "University Email", href: "mailto:sofia.robles@okstate.edu" },
+];
+
 export default function Resume() {
     return(
     <main className="max-w-2xl mx-auto p-8 text-center">
         <h1 className="text-4xl font-bold mb-4">Resume</h1>
+        
         <ul>
-            <li>
-                <p>
-                    <a
-                    href="https://github.com/sofia-robles"
-                    className="underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        Personal GitHub
+            {links.map((link) => (
+                <li key={link.href}>
+                    <a href={link.href} className="underline" target="_blank" rel="noopener noreferrer">
+                        {link.label}
                     </a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a
-                    href="https://github.com/robles-sofia"
-                    className="underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        University GitHub
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a
-                    href="https://www.linkedin.com/in/sofianrobles/"
-                    className="underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a
-                    href="mailto:sofianrobles@gmail.com"
-                    className="underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        Personal Email
-                    </a>
-                </p>
-            </li>
-            <li>
-                <p>
-                    <a
-                    href="mailto:sofia.robles@okstate.edu"
-                    className="underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                        University Email
-                    </a>
-                </p>
-            </li>
+                </li>
+            ))}
         </ul>
+
         <p>Enter resume info here</p>
     </main>
     );
