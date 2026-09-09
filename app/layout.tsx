@@ -25,12 +25,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <header className="border-b p-4">
+        <header className="border-b border-sky bg-white/60 p-4">
           <nav>
-            <ul className="flex gap-4 justify-center">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/projects">Projects</Link></li>
-              <li><Link href="/resume">Resume</Link></li>
+            <ul className="flex gap-2 justify-center">
+              <li><Link href="/" className="text-denim font-medium px-4 py-2 rounded-full transition-colors duration-200 hover:bg-cloud">Home</Link></li>
+              <li><Link href="/projects" className="text-denim font-medium px-4 py-2 rounded-full transition-colors duration-200 hover:bg-cloud">Projects</Link></li>
+              <li><Link href="/resume" className="text-denim font-medium px-4 py-2 rounded-full transition-colors duration-200 hover:bg-cloud">Resume</Link></li>
             </ul>
           </nav>
         </header>
